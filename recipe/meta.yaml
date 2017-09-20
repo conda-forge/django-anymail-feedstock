@@ -13,6 +13,7 @@ source:
 
 build:
   number: 0
+  norach: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
