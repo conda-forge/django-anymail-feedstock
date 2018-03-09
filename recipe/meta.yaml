@@ -1,6 +1,6 @@
 {% set name = "django-anymail" %}
-{% set version = "1.3" %}
-{% set sha256 = "6868f65ea15ea958591aecf222ddc3cf37970ca5441a035ddac285168720ed52" %}
+{% set version = "2.0" %}
+{% set sha256 = "bbcf597c6dcdca59b2393f20754b90b5601ac27f3a7157e17ac73e9e8da2d226" %}
 
 package:
   name: {{ name|lower }}
