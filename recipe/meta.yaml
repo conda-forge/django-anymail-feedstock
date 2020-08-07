@@ -1,6 +1,6 @@
 {% set name = "django-anymail" %}
-{% set version = "7.0.0" %}
-{% set sha256 = "dfa4a00a1608d40893cf818ed3632046a0bb01cf2a2bb3a64d31ff146151533a" %}
+{% set version = "7.1.0" %}
+{% set sha256 = "a2bd7a40aa91a1033892630652d3ca8148de70fa2927eb4eebde239fe705f0f4" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
