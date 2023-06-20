@@ -17,11 +17,10 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - python
-    - pip
   host:
     - python >=3.7
+    - hatchling
+    - pip
   run:
     - python >=3.7
     - django >=2.0
