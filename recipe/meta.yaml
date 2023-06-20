@@ -20,8 +20,10 @@ requirements:
   build:
     - python
     - pip
+  host:
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
     - django >=1.8
     - requests >=2.4.3
     - six
