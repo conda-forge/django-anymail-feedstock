@@ -1,28 +1,26 @@
 {% set name = "django-anymail" %}
-{% set version = "10.2" %}
-{% set sha256 = "1f3006d3b16874aaa32976078da6cdc9baa7f5274cf80e3fc51a288887617aaf" %}
+{% set version = "10.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django_anymail-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 35d8ec20b06000af3c1638492e32f416fd1a584f0a572cded03f1bc570169ed0
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - hatchling
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - django >=2.0
     - requests >=2.4.3
     - urllib3 >=1.25.0
