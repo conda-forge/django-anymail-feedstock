@@ -1,5 +1,5 @@
 {% set name = "django-anymail" %}
-{% set version = "11.1" %}
+{% set version = "12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django_anymail-{{ version }}.tar.gz
-  sha256: ec373c0a2d79f5e6a3ecda819c8087af0b0e114e4ec1d8576dea4c786f9b2a59
+  sha256: 65789c1b0f42915aa0450a4f173f77572d4c552979b748ddd8125af41972ad30
 
 build:
   noarch: python
