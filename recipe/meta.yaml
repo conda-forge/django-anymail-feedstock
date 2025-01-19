@@ -25,6 +25,15 @@ requirements:
     - requests >=2.4.3
     - urllib3 >=1.25.0
 
+test:
+  imports:
+    - django_anymail
+  commands:
+    - pip check
+  requires:
+    - pip
+    - python {{ python_min }}
+
 about:
   home: https://github.com/anymail/django-anymail
   license: BSD-3-Clause
