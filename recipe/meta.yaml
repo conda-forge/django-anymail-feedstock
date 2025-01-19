@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-    - django_anymail
+    - anymail
   commands:
     - pip check
   requires:
